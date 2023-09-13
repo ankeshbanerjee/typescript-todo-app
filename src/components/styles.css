@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Prompt:wght@400&display=swap');
+*{
+    margin : 0;
+    padding: 0;
+}
+
+body{
+    background-color: #2f74c0;
+}
+
+.header {
+    text-align: center;
+    font-family: 'Prompt', sans-serif;
+    font-size: 2.5rem;
+    color: #ffff;
+    z-index: 1;
+    margin: 30px 0;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.input{
+    padding: 15px 20px;
+    width: 40%;
+    border-radius: 20px;
+    font-size: 1.3rem;
+    border: none;
+    font-family: 'Prompt', sans-serif;
+    
+}
+
+
+.input:focus {
+    box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.5);
+    transition: 0.2s ease-in;
+    outline: none;
+}
+
+.btn{
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    font-size: 1.7rem;
+    font-family: 'Prompt', sans-serif;
+    border: none;
+    background-color: #00eeff;
+    font-weight: 800;
+    cursor: pointer;
+    color: #000;
+    margin-left: 10px;
+    box-shadow:  10px 10px 5px 0px rgba(0,0,0,0.5);;
+}
+
+.btn:hover{
+    background-color: #01c4d2;
+    transition: 0.2s ease-in;
+}
+
+.btn:active{
+    transform: scale(0.7);
+    transition: 0.2s ease-in;
+}
+
+.list-container{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+@media (max-width: 800px){
+    .input{
+        width: 70%;
+    }
+    .list-container{
+        width: 90%;
+    }
+}
+
+.list-item{
+    width: 450px;
+    background-color: rgb(255, 221, 0);
+    font-family: 'Prompt', sans-serif;
+    font-size: 1.5rem;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todo-text{
+    max-width: 70%;
+    overflow-wrap: break-word;
+}
+
+.modifiers{
+    display: flex;
+}
+
+.icon{
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.edit-input{
+    border: none;
+    font-family: 'Prompt', sans-serif;
+    font-size: 1.5rem;
+}
+
+.edit-input:focus{
+    outline: none;
+    
+}
